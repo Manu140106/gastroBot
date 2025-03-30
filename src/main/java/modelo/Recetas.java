@@ -13,11 +13,13 @@ public class Recetas {
     private String nombre;
     private String ingredientes;
     private String pasos;
-
-    public Recetas(String nombre, String ingredientes, String pasos) {
+    private String proteinasSeleccionadas;
+    
+    public Recetas(String nombre, String ingredientes, String pasos, String proteinasSeleccionadas) {
         this.nombre = nombre;
         this.ingredientes = ingredientes;
         this.pasos = pasos;
+        this.proteinasSeleccionadas = proteinasSeleccionadas;
     }
     
     public String getNombre(){
@@ -31,4 +33,10 @@ public class Recetas {
     public String getPasos(){
         return pasos;
     }
+
+    public String getProteinasSeleccionadas() {
+        return proteinasSeleccionadas;
+    }
+    
+    
 }
